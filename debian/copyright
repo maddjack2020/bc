@@ -1,0 +1,951 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: bc
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     MEMORY_BUGS.md
+           NEWS.md
+           bcl.pc.in
+           gen/bc_help.txt
+           gen/dc_help.txt
+           gen/lib.bc
+           gen/lib2.bc
+           gen/strgen.c
+           include/args.h
+           include/bc.h
+           include/bcl.h
+           include/dc.h
+           include/file.h
+           include/history.h
+           include/lang.h
+           include/lex.h
+           include/library.h
+           include/num.h
+           include/opt.h
+           include/parse.h
+           include/program.h
+           include/rand.h
+           include/read.h
+           include/status.h
+           include/vector.h
+           include/version.h
+           include/vm.h
+           locales/de_DE.ISO8859-1.msg
+           locales/de_DE.UTF-8.msg
+           locales/en_US.msg
+           locales/es_ES.ISO8859-1.msg
+           locales/es_ES.UTF-8.msg
+           locales/fr_FR.ISO8859-1.msg
+           locales/fr_FR.UTF-8.msg
+           locales/ja_JP.UTF-8.msg
+           locales/ja_JP.eucJP.msg
+           locales/nl_NL.ISO8859-1.msg
+           locales/nl_NL.UTF-8.msg
+           locales/pl_PL.ISO8859-2.msg
+           locales/pl_PL.UTF-8.msg
+           locales/pt_PT.ISO8859-1.msg
+           locales/pt_PT.UTF-8.msg
+           locales/ru_RU.CP1251.msg
+           locales/ru_RU.CP866.msg
+           locales/ru_RU.ISO8859-5.msg
+           locales/ru_RU.KOI8-R.msg
+           locales/ru_RU.UTF-8.msg
+           locales/zh_CN.GB18030.msg
+           locales/zh_CN.GB2312.msg
+           locales/zh_CN.GBK.msg
+           locales/zh_CN.UTF-8.msg
+           locales/zh_CN.eucCN.msg
+           manuals/algorithms.md
+           manuals/build.md
+           scripts/safe-install.sh
+           src/args.c
+           src/bc.c
+           src/bc_lex.c
+           src/bc_parse.c
+           src/data.c
+           src/dc.c
+           src/dc_lex.c
+           src/dc_parse.c
+           src/file.c
+           src/history.c
+           src/lang.c
+           src/lex.c
+           src/library.c
+           src/main.c
+           src/num.c
+           src/opt.c
+           src/parse.c
+           src/program.c
+           src/rand.c
+           src/read.c
+           src/vector.c
+           src/vm.c
+           tests/all.txt
+           tests/bc/abs.txt
+           tests/bc/abs_results.txt
+           tests/bc/add.txt
+           tests/bc/add_results.txt
+           tests/bc/all.txt
+           tests/bc/arctangent.txt
+           tests/bc/arctangent_results.txt
+           tests/bc/arrays.txt
+           tests/bc/arrays_results.txt
+           tests/bc/asciify_array.txt
+           tests/bc/asciify_array_results.txt
+           tests/bc/assignments.txt
+           tests/bc/assignments_results.txt
+           tests/bc/bitfuncs.txt
+           tests/bc/bitfuncs_results.txt
+           tests/bc/boolean.txt
+           tests/bc/boolean_results.txt
+           tests/bc/comp.txt
+           tests/bc/comp_results.txt
+           tests/bc/cosine.txt
+           tests/bc/cosine_results.txt
+           tests/bc/decimal.txt
+           tests/bc/decimal_results.txt
+           tests/bc/divide.txt
+           tests/bc/divide_results.txt
+           tests/bc/divmod.txt
+           tests/bc/divmod_results.txt
+           tests/bc/engineering.txt
+           tests/bc/engineering_results.txt
+           tests/bc/errors.txt
+           tests/bc/errors/01.txt
+           tests/bc/errors/02.txt
+           tests/bc/errors/03.txt
+           tests/bc/errors/04.txt
+           tests/bc/errors/05.txt
+           tests/bc/errors/06.txt
+           tests/bc/errors/07.txt
+           tests/bc/errors/08.txt
+           tests/bc/errors/09.txt
+           tests/bc/errors/10.txt
+           tests/bc/errors/11.txt
+           tests/bc/errors/12.txt
+           tests/bc/errors/13.txt
+           tests/bc/errors/14.txt
+           tests/bc/errors/15.txt
+           tests/bc/errors/16.txt
+           tests/bc/errors/17.txt
+           tests/bc/errors/18.txt
+           tests/bc/errors/19.txt
+           tests/bc/errors/20.txt
+           tests/bc/errors/21.txt
+           tests/bc/errors/22.txt
+           tests/bc/errors/23.txt
+           tests/bc/errors/24.txt
+           tests/bc/errors/25.txt
+           tests/bc/errors/26.txt
+           tests/bc/errors/27.txt
+           tests/bc/errors/28.txt
+           tests/bc/errors/29.txt
+           tests/bc/errors/30.txt
+           tests/bc/errors/31.txt
+           tests/bc/errors/32.txt
+           tests/bc/errors/33.txt
+           tests/bc/errors/34.txt
+           tests/bc/errors/35.txt
+           tests/bc/errors/36.txt
+           tests/bc/exponent.txt
+           tests/bc/exponent_results.txt
+           tests/bc/fib.txt
+           tests/bc/fib_results.txt
+           tests/bc/functions.txt
+           tests/bc/functions_results.txt
+           tests/bc/globals.txt
+           tests/bc/globals_results.txt
+           tests/bc/is_number.txt
+           tests/bc/is_number_results.txt
+           tests/bc/is_string.txt
+           tests/bc/is_string_results.txt
+           tests/bc/leadingzero.txt
+           tests/bc/leadingzero_results.txt
+           tests/bc/length.txt
+           tests/bc/length_results.txt
+           tests/bc/letters.txt
+           tests/bc/letters_results.txt
+           tests/bc/lib2.txt
+           tests/bc/lib2_results.txt
+           tests/bc/line_by_line1.txt
+           tests/bc/line_by_line1_results.txt
+           tests/bc/line_by_line2.txt
+           tests/bc/line_by_line2_results.txt
+           tests/bc/line_loop_quit1.txt
+           tests/bc/line_loop_quit1_results.txt
+           tests/bc/line_loop_quit2.txt
+           tests/bc/line_loop_quit2_results.txt
+           tests/bc/log.txt
+           tests/bc/log_results.txt
+           tests/bc/misc.txt
+           tests/bc/misc1.txt
+           tests/bc/misc1_results.txt
+           tests/bc/misc2.txt
+           tests/bc/misc2_results.txt
+           tests/bc/misc3.txt
+           tests/bc/misc3_results.txt
+           tests/bc/misc4.txt
+           tests/bc/misc4_results.txt
+           tests/bc/misc5.txt
+           tests/bc/misc5_results.txt
+           tests/bc/misc8.txt
+           tests/bc/misc8_results.txt
+           tests/bc/misc_results.txt
+           tests/bc/modexp.txt
+           tests/bc/modexp_results.txt
+           tests/bc/modulus.txt
+           tests/bc/modulus_results.txt
+           tests/bc/multiply.txt
+           tests/bc/multiply_results.txt
+           tests/bc/pi.txt
+           tests/bc/pi_results.txt
+           tests/bc/places.txt
+           tests/bc/places_results.txt
+           tests/bc/posix_errors.txt
+           tests/bc/power.txt
+           tests/bc/power_results.txt
+           tests/bc/print2.txt
+           tests/bc/print2_results.txt
+           tests/bc/rand.txt
+           tests/bc/rand_limits.txt
+           tests/bc/rand_limits_results.txt
+           tests/bc/rand_results.txt
+           tests/bc/read.txt
+           tests/bc/read_errors.txt
+           tests/bc/read_results.txt
+           tests/bc/recursive_arrays.txt
+           tests/bc/recursive_arrays_results.txt
+           tests/bc/scale.txt
+           tests/bc/scale_results.txt
+           tests/bc/scientific.txt
+           tests/bc/scientific_results.txt
+           tests/bc/scripts/add.bc
+           tests/bc/scripts/afl1.bc
+           tests/bc/scripts/afl1.txt
+           tests/bc/scripts/all.txt
+           tests/bc/scripts/array.bc
+           tests/bc/scripts/array.txt
+           tests/bc/scripts/array2.bc
+           tests/bc/scripts/array2.txt
+           tests/bc/scripts/atan.bc
+           tests/bc/scripts/atan.txt
+           tests/bc/scripts/bessel.bc
+           tests/bc/scripts/cbrt.txt
+           tests/bc/scripts/divide.bc
+           tests/bc/scripts/functions.bc
+           tests/bc/scripts/functions.txt
+           tests/bc/scripts/globals.bc
+           tests/bc/scripts/globals.txt
+           tests/bc/scripts/ifs.bc
+           tests/bc/scripts/ifs.txt
+           tests/bc/scripts/ifs2.bc
+           tests/bc/scripts/ifs2.txt
+           tests/bc/scripts/len.bc
+           tests/bc/scripts/len.txt
+           tests/bc/scripts/multiply.bc
+           tests/bc/scripts/parse.bc
+           tests/bc/scripts/print.bc
+           tests/bc/scripts/rand.bc
+           tests/bc/scripts/rand.txt
+           tests/bc/scripts/references.bc
+           tests/bc/scripts/references.txt
+           tests/bc/scripts/root.bc
+           tests/bc/scripts/root.txt
+           tests/bc/scripts/screen.bc
+           tests/bc/scripts/screen.txt
+           tests/bc/scripts/strings2.bc
+           tests/bc/scripts/subtract.bc
+           tests/bc/shift.txt
+           tests/bc/shift_results.txt
+           tests/bc/sine.txt
+           tests/bc/sine_results.txt
+           tests/bc/sqrt.txt
+           tests/bc/sqrt_results.txt
+           tests/bc/stdin.txt
+           tests/bc/stdin1.txt
+           tests/bc/stdin1_results.txt
+           tests/bc/stdin2.txt
+           tests/bc/stdin2_results.txt
+           tests/bc/stdin_results.txt
+           tests/bc/strings.txt
+           tests/bc/strings_results.txt
+           tests/bc/subtract.txt
+           tests/bc/subtract_results.txt
+           tests/bc/trunc.txt
+           tests/bc/trunc_results.txt
+           tests/bc/vars.txt
+           tests/bc/vars_results.txt
+           tests/bc/void.txt
+           tests/bc/void_results.txt
+           tests/bcl.c
+           tests/dc/abs.txt
+           tests/dc/abs_results.txt
+           tests/dc/add.txt
+           tests/dc/add_results.txt
+           tests/dc/all.txt
+           tests/dc/boolean.txt
+           tests/dc/boolean_results.txt
+           tests/dc/decimal.txt
+           tests/dc/decimal_results.txt
+           tests/dc/divide.txt
+           tests/dc/divide_results.txt
+           tests/dc/divmod.txt
+           tests/dc/divmod_results.txt
+           tests/dc/engineering.txt
+           tests/dc/engineering_results.txt
+           tests/dc/errors.txt
+           tests/dc/errors/01.txt
+           tests/dc/errors/02.txt
+           tests/dc/errors/03.txt
+           tests/dc/errors/04.txt
+           tests/dc/errors/05.txt
+           tests/dc/errors/06.txt
+           tests/dc/errors/07.txt
+           tests/dc/errors/08.txt
+           tests/dc/errors/09.txt
+           tests/dc/errors/10.txt
+           tests/dc/errors/11.txt
+           tests/dc/errors/12.txt
+           tests/dc/errors/13.txt
+           tests/dc/errors/14.txt
+           tests/dc/errors/15.txt
+           tests/dc/errors/16.txt
+           tests/dc/errors/17.txt
+           tests/dc/errors/18.txt
+           tests/dc/errors/19.txt
+           tests/dc/errors/20.txt
+           tests/dc/errors/21.txt
+           tests/dc/errors/22.txt
+           tests/dc/errors/23.txt
+           tests/dc/errors/24.txt
+           tests/dc/errors/25.txt
+           tests/dc/errors/26.txt
+           tests/dc/errors/27.txt
+           tests/dc/errors/28.txt
+           tests/dc/errors/29.txt
+           tests/dc/errors/30.txt
+           tests/dc/errors/31.txt
+           tests/dc/errors/32.txt
+           tests/dc/errors/33.txt
+           tests/dc/exec_stack_len.txt
+           tests/dc/exec_stack_len_results.txt
+           tests/dc/is_number.txt
+           tests/dc/is_number_results.txt
+           tests/dc/is_string.txt
+           tests/dc/is_string_results.txt
+           tests/dc/length.txt
+           tests/dc/length_results.txt
+           tests/dc/misc.txt
+           tests/dc/misc1.txt
+           tests/dc/misc1_results.txt
+           tests/dc/misc_results.txt
+           tests/dc/modexp.txt
+           tests/dc/modexp_results.txt
+           tests/dc/modulus.txt
+           tests/dc/modulus_results.txt
+           tests/dc/multiply.txt
+           tests/dc/multiply_results.txt
+           tests/dc/negate.txt
+           tests/dc/negate_results.txt
+           tests/dc/places.txt
+           tests/dc/places_results.txt
+           tests/dc/power.txt
+           tests/dc/power_results.txt
+           tests/dc/rand.txt
+           tests/dc/rand_results.txt
+           tests/dc/read.txt
+           tests/dc/read_errors.txt
+           tests/dc/read_results.txt
+           tests/dc/scientific.txt
+           tests/dc/scientific_results.txt
+           tests/dc/scripts/all.txt
+           tests/dc/scripts/array.dc
+           tests/dc/scripts/array.txt
+           tests/dc/scripts/asciify.dc
+           tests/dc/scripts/asciify.txt
+           tests/dc/scripts/else.dc
+           tests/dc/scripts/else.txt
+           tests/dc/scripts/factorial.dc
+           tests/dc/scripts/factorial.txt
+           tests/dc/scripts/loop.dc
+           tests/dc/scripts/loop.txt
+           tests/dc/scripts/no_clamp.dc
+           tests/dc/scripts/no_clamp.txt
+           tests/dc/scripts/prime.dc
+           tests/dc/scripts/quit.dc
+           tests/dc/scripts/quit.txt
+           tests/dc/scripts/stream.dc
+           tests/dc/scripts/stream.txt
+           tests/dc/scripts/weird.dc
+           tests/dc/scripts/weird.txt
+           tests/dc/shift.txt
+           tests/dc/shift_results.txt
+           tests/dc/sqrt.txt
+           tests/dc/sqrt_results.txt
+           tests/dc/stack_len.txt
+           tests/dc/stack_len_results.txt
+           tests/dc/stdin.txt
+           tests/dc/stdin_results.txt
+           tests/dc/strings.txt
+           tests/dc/strings_results.txt
+           tests/dc/subtract.txt
+           tests/dc/subtract_results.txt
+           tests/dc/trunc.txt
+           tests/dc/trunc_results.txt
+           tests/dc/vars.txt
+           tests/dc/vars_results.txt
+           tests/extra_required.txt
+           tests/script.sed
+           vs/bc.sln
+           vs/bc.vcxproj.filters
+           vs/bcl.sln
+           vs/bcl.vcxproj.filters
+           vs/tests/tests_bc.bat
+           vs/tests/tests_dc.bat
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     configure.sh
+           gen/strgen.sh
+           manuals/bc/A.1
+           manuals/bc/E.1
+           manuals/bc/EH.1
+           manuals/bc/EHN.1
+           manuals/bc/EN.1
+           manuals/bc/H.1
+           manuals/bc/HN.1
+           manuals/bc/N.1
+           manuals/bcl.3
+           manuals/dc/A.1
+           manuals/dc/E.1
+           manuals/dc/EH.1
+           manuals/dc/EHN.1
+           manuals/dc/EN.1
+           manuals/dc/H.1
+           manuals/dc/HN.1
+           manuals/dc/N.1
+           scripts/format.sh
+           scripts/karatsuba.py
+           scripts/link.sh
+           scripts/lint.sh
+           scripts/locale_uninstall.sh
+           tests/all.sh
+           tests/dc/scripts/easter.sh
+           tests/error.sh
+           tests/history.py
+           tests/history.sh
+           tests/other.sh
+           tests/read.sh
+           tests/script.sh
+           tests/scripts.sh
+           tests/stdin.sh
+           tests/test.sh
+Copyright: 2018-2023 Gavin D. Howard and contributors.
+License:   BSD-2-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+
+Files:     NOTICE.md
+Copyright: 2018-2023 Gavin D. Howard and contributors.
+License:   __UNKNOWN__
+ ## Contributors
+ .
+ The contributors to `bc` (besides Gavin) are listed below in alphabetical order.
+ .
+ * Laurent Bercot (skarnet)
+ * Stefan Eßer (stesser)
+ * Michael Forney (michaelforney)
+ * John Regan (jprjr)
+ * rofl0r
+ * Zach van Rijn (me@zv.io)
+
+Files:     README.md
+Copyright: __NO_COPYRIGHT__ in: README.md
+License:   __UNKNOWN__
+ expect bugs because the version is old.
+ * [Android Open Source `bc`][32]. Any bugs in that `bc` can be reported here.
+ .
+ This is a non-comprehensive list of Linux distros that use this `bc` as the
+ system `bc`:
+ .
+ * [Gentoo][33]; it is a first-class alternative to GNU `bc`, but not exclusive.
+ * [Linux from Scratch][34].
+ .
+ Other Linux distros package it as a second-class alternative, usually as `bc-gh`
+ or `howard-bc`.
+ .
+ ## Language
+ .
+ This `bc` is written in pure ISO C99, using POSIX 2008 APIs with custom Windows
+ compatibility code.
+ .
+ ## Commit Messages
+ .
+ This `bc` uses the commit message guidelines laid out in [this blog post][10].
+ .
+ ## Semantic Versioning
+ .
+ This `bc` uses [semantic versioning][11].
+ .
+ ## AI-Free
+ .
+ This repository is 100% AI-Free code.
+ .
+ ## Contents
+ .
+ Items labeled with `(maintainer use only)` are not included in release source
+ tarballs.
+ .
+ Files:
+ .
+ .gitignore           The git ignore file (maintainer use only).
+ .gitattributes       The git attributes file (maintainer use only).
+ bcl.pc.in            A template pkg-config file for bcl.
+ configure            A symlink to configure.sh to make packaging easier.
+ configure.sh         The configure script.
+ LICENSE.md           A Markdown form of the BSD 2-clause License.
+ Makefile.in          The Makefile template.
+ NEWS.md              The changelog.
+ NOTICE.md            List of contributors and copyright owners.
+ .
+ Folders:
+ .
+ benchmarks  A folder of benchmarks for various aspects of bc performance.
+ gen         The bc math library, help texts, and code to generate C source.
+ include     All header files.
+ locales     Locale files, in .msg format. Patches welcome for translations.
+ manuals     Manuals for both programs.
+ src         All source code.
+ scripts     A bunch of shell scripts to help with development and building.
+ tests       All tests.
+ vs          Files needed for the build on Windows.
+ .
+ [1]: https://www.gnu.org/software/bc/
+ [4]: ./LICENSE.md
+ [5]: ./manuals/build.md
+ [7]: ./manuals/algorithms.md
+ [8]: https://git.busybox.net/busybox/tree/miscutils/bc.c
+ [9]: https://github.com/landley/toybox/blob/master/toys/pending/bc.c
+ [10]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+ [11]: http://semver.org/
+ [12]: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/bc.html
+ [17]: https://git.gavinhoward.com/gavin/vim-bc
+
+Files:     tests/bc/timeconst.sh
+Copyright: 2018-2023 Gavin D. Howard and contributors.
+License:   BSD-2-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ Tests the timeconst.bc script from the Linux kernel build.
+ You can find the script at kernel/time/timeconst.bc in any Linux repo.
+ One such repo is: https://github.com/torvalds/linux
+
+Files:     scripts/functions.sh
+Copyright: 2018-2023 Gavin D. Howard and contributors.
+License:   BSD-2-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ This script is NOT meant to be run! It is meant to be sourced by other
+ scripts.
+ .
+ Reads and follows a link until it finds a real file. This is here because the
+ readlink utility is not part of the POSIX standard. Sigh...
+ @param f  The link to find the original file for.
+
+Files:     scripts/exec-install.sh
+Copyright: 2018-2023 Gavin D. Howard and contributors.
+License:   BSD-2-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ Print usage and exit with an error.
+
+Files:     tests/errors.sh
+Copyright: 2018-2023 Gavin D. Howard and contributors.
+License:   BSD-2-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ WARNING: Test files cannot have empty lines!
+
+Files:     LICENSE.md
+Copyright: 2010-2013 Pieter Noordhuis <pcnoordhuis at gmail dot com>
+           2010-2014 Salvatore Sanfilippo <antirez at gmail dot com>
+           2014-2017 Melissa O'Neill and PCG Project contributors
+           2018 rain-1 <rain1@openmailbox.org>
+           2018-2023 Gavin D. Howard <gavin@gavinhoward.com>
+           2021 Rich Felker
+License:   BSD-2-Clause
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ ## History
+ .
+ The files `src/history.c` and `include/history.h` are under the following
+ copyrights and license:
+ .
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or
+ other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ ## Rand
+ .
+ The files `src/rand.c` and `include/rand.h` are under the following copyrights
+ and license:
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a copy of
+ this software and associated documentation files (the "Software"), to deal in
+ the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+ the Software, and to permit persons to whom the Software is furnished to do so,
+ subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ ## `scripts/safe-install.sh`
+ .
+ The file `scripts/safe-install.sh` is under the following copyright and license:
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a copy of
+ this software and associated documentation files (the “Software”), to deal in
+ the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+ the Software, and to permit persons to whom the Software is furnished to do so,
+ subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ ## `scripts/ministat.c`
+ .
+ The file `scripts/ministat.c` is under the following license:
+ .
+ "THE BEER-WARE LICENSE" (Revision 42):
+ .
+ <phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you
+ can do whatever you want with this stuff. If we meet some day, and you think
+ this stuff is worth it, you can buy me a beer in return.   Poul-Henning Kamp
+
+Files:     scripts/locale_install.sh
+Copyright: 2018-2023 Gavin D. Howard and contributors.
+License:   BSD-2-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ Just print the usage and exit with an error.
+ @param 1  A message to print.
+
+Files:     Makefile.in
+Copyright: 2018-2023 Gavin D. Howard and contributors.
+License:   __AUTO_PERMISSIVE__
+ Autogenerated files with permissive licenses.
+
+#----------------------------------------------------------------------------
+# xml and html files (skipped):
+#         manuals/bcl.3.md
+#         manuals/bc/H.1.md
+#         manuals/bc/A.1.md
+#         manuals/bc/HN.1.md
+#         manuals/bc/EN.1.md
+#         manuals/bc/N.1.md
+#         manuals/bc/E.1.md
+#         manuals/bc/EH.1.md
+#         manuals/bc/EHN.1.md
+#         manuals/dc/H.1.md
+#         manuals/dc/A.1.md
+#         manuals/dc/HN.1.md
+#         manuals/dc/EN.1.md
+#         manuals/dc/N.1.md
+#         manuals/dc/E.1.md
+#         manuals/dc/EH.1.md
+#         manuals/dc/EHN.1.md
+#         vs/bcl.vcxproj
+#         vs/bc.vcxproj
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: LICENSE.md
+ # License
+ .
+ Copyright (c) 2018-2023 Gavin D. Howard <gavin@gavinhoward.com>
+ .
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice, this
+   list of conditions and the following disclaimer in the documentation and/or
+   other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ ## History
+ .
+ The files `src/history.c` and `include/history.h` are under the following
+ copyrights and license:
+ .
+ Copyright (c) 2010-2014, Salvatore Sanfilippo <antirez at gmail dot com><br>
+ Copyright (c) 2010-2013, Pieter Noordhuis <pcnoordhuis at gmail dot com><br>
+ Copyright (c) 2018 rain-1 <rain1@openmailbox.org><br>
+ Copyright (c) 2018-2023, Gavin D. Howard <gavin@gavinhoward.com>
+ .
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice, this
+   list of conditions and the following disclaimer in the documentation and/or
+   other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ ## Rand
+ .
+ The files `src/rand.c` and `include/rand.h` are under the following copyrights
+ and license:
+ .
+ Copyright (c) 2014-2017 Melissa O'Neill and PCG Project contributors<br>
+ Copyright (c) 2018-2023 Gavin D. Howard <gavin@gavinhoward.com>
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a copy of
+ this software and associated documentation files (the "Software"), to deal in
+ the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+ the Software, and to permit persons to whom the Software is furnished to do so,
+ subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ ## `scripts/safe-install.sh`
+ .
+ The file `scripts/safe-install.sh` is under the following copyright and license:
+ .
+ Copyright (c) 2021 Rich Felker
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a copy of
+ this software and associated documentation files (the “Software”), to deal in
+ the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+ the Software, and to permit persons to whom the Software is furnished to do so,
+ subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ ## `scripts/ministat.c`
+ .
+ The file `scripts/ministat.c` is under the following license:
+ .
+ "THE BEER-WARE LICENSE" (Revision 42):
+ .
+ <phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you
+ can do whatever you want with this stuff. If we meet some day, and you think
+ this stuff is worth it, you can buy me a beer in return.   Poul-Henning Kamp
